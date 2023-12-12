@@ -26,7 +26,6 @@ function Ground() {
     roughness.offset.set(0, t % 1);
     normal.offset.set(0, t % 1);
 });
-
   return (
     <mesh rotation-x={-Math.PI * 0.5} castShadow receiveShadow>
       <planeGeometry />

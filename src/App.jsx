@@ -3,12 +3,18 @@ import { animated, useSpring,config } from '@react-spring/three'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import Experiance from './components/Experiance'
+import ColorPicker from './components/ColorPicker'
 
 function App() {
   return (
+    <>
+    <div style={{width:"100px",height:"50px"}}>
+      <ColorPicker/>
+    </div>
     <Canvas>
       <Experiance/>
     </Canvas>
+    </>
   )
 }
 
